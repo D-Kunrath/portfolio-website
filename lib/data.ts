@@ -36,27 +36,43 @@ export const links = [
 export const experiencesData = [
   {
     title: "Graduated bootcamp",
-    location: "Miami, FL",
+    location: "São Paulo, SP (Remote)",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 2 months of studying full-time. I immediately was invited as a Teacher Assistant.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2020",
+  },
+  {
+    title: "Teacher Assistant",
+    location: "São Paulo, SP (Remote)",
+    description:
+      "I worked as a a Teacher Assistant for 1.5 years. There I helped others learn programming and while honed my skills.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020 - 2022",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "São Paulo, SP (Remote)",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a front-end developer for over a year in an Internet Banking Application. I also learned more tools and started using Typescript.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2021 - 2023",
+  },
+  {
+    title: "Lead Teacher",
+    location: "São Paulo, SP (Remote)",
+    description:
+      "After being a teacher assistant, I applied to a Lead Teacher and was approved. Followed the same steps that my mentors taught me and helped students start programming.",
+    icon: React.createElement(FaReact),
+    date: "2022 - 2023",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "São Paulo, SP (Remote)",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, TypeScript, Tailwind, Express and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
 
@@ -96,12 +112,7 @@ export const skillsData = [
   "Tailwind",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
