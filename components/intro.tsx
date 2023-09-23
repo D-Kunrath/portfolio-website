@@ -1,27 +1,27 @@
 "use client";
 
-import Image from 'next/image';
-import React from 'react';
-import { motion } from 'framer-motion';
-import { BsArrowRight, BsLinkedin, BsGithub } from 'react-icons/bs';
-import { HiDownload } from 'react-icons/hi';
-import Link from 'next/link';
-import { useSectionInView } from '@/lib/hooks';
-import { useActiveSectionContext } from '@/context/header-section-context';
+import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
+import { BsArrowRight, BsLinkedin, BsGithub } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import Link from "next/link";
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/header-section-context";
 
 export default function Intro() {
-  const { ref } = useSectionInView('Home', 0.5);
+  const { ref } = useSectionInView("Home", 0.5);
   const {setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
 
   return (
-    <section id='home' ref={ref} className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+    <section id="home" ref={ref} className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: 'tween',
+              type: "tween",
               duration: 0.2
             }}
           >
@@ -32,7 +32,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className='h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl'
+              className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
           <motion.span
@@ -40,7 +40,7 @@ export default function Intro() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: 'spring',
+              type: "spring",
               stiffness: 125,
               delay: 0.1,
               duration: 0.7
@@ -62,7 +62,7 @@ export default function Intro() {
         <span className="underline">React</span>.
       </motion.h1>
       <motion.div
-        className='flex flex-col sm:flex-row justify-center gap-2 px-4 text-lg font-medium'
+        className="flex flex-col sm:flex-row justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -76,7 +76,7 @@ export default function Intro() {
             focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition
           "
           onClick={() => {
-            setActiveSection('Contact');
+            setActiveSection("Contact");
             setTimeOfLastClick(Date.now())
           }}
         >
