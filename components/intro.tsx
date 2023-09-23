@@ -71,7 +71,10 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="
+            group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none
+            focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition
+          "
           onClick={() => {
             setActiveSection('Contact');
             setTimeOfLastClick(Date.now())
@@ -83,7 +86,11 @@ export default function Intro() {
         <a
           download
           href="/CV-ptbr.pdf"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack"
+          className="
+            group bg-white px-7 py-3 flex items-center gap-2 rounded-full cursor-pointer outline-none
+            focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack
+            dark:bg-white/10
+          "
         >
           Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
@@ -91,7 +98,11 @@ export default function Intro() {
         <a
           href="https://linkedin.com/in/daniel-k-albanez"
           target="_blank"
-          className="bg-white p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack"
+          className="
+            bg-white p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none
+            focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack
+            dark:bg-white/10 dark:text-white/60
+          "
         >
           <BsLinkedin />
         </a>
@@ -99,7 +110,11 @@ export default function Intro() {
         <a
           href="https://github.com/d-kunrath"
           target="_blank"
-          className="bg-white p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack"
+          className="
+            bg-white p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none
+            focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack
+            dark:bg-white/10 dark:text-white/60
+          "
         >
           <BsGithub />
         </a>

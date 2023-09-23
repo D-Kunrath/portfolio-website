@@ -34,6 +34,7 @@ export default function Project ({ title, description, tags, imageUrl }: Project
           sm:pr-8 sm:h-[20rem]
           group-even:pl-8
           hover:bg-gray-200 transition
+          dark:bg-white/10 dark:hover:bg-white/20 dark:text-white
         '
       >
         <div
@@ -44,13 +45,13 @@ export default function Project ({ title, description, tags, imageUrl }: Project
           '
         >
           <h3 className='text-2xl font-semibold'>{title}</h3>
-          <p className='mt-2 leading-relaxed text-gray-700'>{description}</p>
+          <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>{description}</p>
           <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
             {tags.map((tag, i) => (
               <li
                 key={i}
                 className='
-                  bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full
+                  bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70
                 '
               >
                 {tag}
