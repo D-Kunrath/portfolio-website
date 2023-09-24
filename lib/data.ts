@@ -43,7 +43,7 @@ export const experiencesData = [
     date: "2020",
   },
   {
-    title: "Teacher Assistant",
+    title: "Web Dev. Teacher Assistant",
     location: "São Paulo, SP (Remote)",
     description:
       "I worked as a a Teacher Assistant for 1.5 years. There I helped others learn programming and while honed my skills.",
@@ -59,7 +59,7 @@ export const experiencesData = [
     date: "2021 - 2023",
   },
   {
-    title: "Lead Teacher",
+    title: "Web Dev. Lead Teacher",
     location: "São Paulo, SP (Remote)",
     description:
       "After being a teacher assistant, I applied to a Lead Teacher and was approved. Followed the same steps that my mentors taught me and helped students start programming.",
