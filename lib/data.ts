@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import threadsClone from "@/public/threads-clone.png";
 
 export const links = [
   {
@@ -77,6 +78,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Threads Clone",
+    description:
+      "Threads Clone used to learn more about the technologies used.",
+    tags: ["Next.js", "MongoDB", "Mongoose", "Tailwind", "Webhooks", "Clerk"],
+    imageUrl: threadsClone,
+  },
   {
     title: "CorpComment",
     description:
